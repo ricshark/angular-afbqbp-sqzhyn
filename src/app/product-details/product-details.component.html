@@ -3,6 +3,9 @@
 <div *ngIf="product">
   <h3>{{ product.name }}</h3>
   <h4>{{ product.price | currency }}</h4>
+  
+  <img src= "{{ product.urlpage }}" alt=" {{ product.name }} " style="width:200px;height:200px;"> 
+
   <p>{{ product.description }}</p>
 
   <button (click)="addToCart(product)">Buy</button>  
