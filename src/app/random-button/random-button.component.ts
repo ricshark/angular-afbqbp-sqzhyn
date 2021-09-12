@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'random-button',
   template: `
     <div id="btn" 
-      (click)="onClick()" 
+      (mousemove)="onClick()" 
       (mousedown)="onMousedown()" 
       (mouseup)="onMouseup()" 
       [class.clicked]="clicked">
@@ -56,4 +56,6 @@ export class RandomButtonComponent  {
   onMouseup() {
     this.clicked = false;
   }
+
+  
 }
