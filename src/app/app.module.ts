@@ -19,9 +19,7 @@ import { RandomButtonComponent } from './random-button/random-button.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    ReactiveFormsModule,
-    BrowserAnimationsModule,
-    BsDatepickerModule,
+    ReactiveFormsModule,   
     RouterModule.forRoot([
       { path: '', component: ProductListComponent },
       { path: 'products/:productId', component: ProductDetailsComponent },
