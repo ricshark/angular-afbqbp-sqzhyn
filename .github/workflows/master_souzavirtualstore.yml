@@ -35,7 +35,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    needs: build
+    
     environment:
       name: 'production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
@@ -47,10 +47,8 @@ jobs:
         name: node-app
 
     - name: 'Deploy to Azure Web App'
-      id: deploy-to-webapp
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'souzavirtualstore'
-        slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_d88f49a9218f4b57994156162b9b7803 }}
-        package: .
+        publish-profile: $
+        package: ./dist/souzavirtualstore
