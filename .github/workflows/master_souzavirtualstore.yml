@@ -20,6 +20,9 @@ jobs:
 
     - name: npm install, build, and test
       run: |
+        
+        npm uninstall -g @angular/cli
+        npm install -g @angular/cli@latest
         npm update
         npm install
         npm run build --prod
