@@ -19,11 +19,8 @@ jobs:
         node-version: '14.x'
 
     - name: npm install, build, and test
-      run: |
-        
-        npm uninstall -g @angular/cli
-        npm install -g @angular/cli@latest
-        npm update
+      run: |        
+        npm audit fix
         npm install
         npm run build --prod
         working-directory: .
