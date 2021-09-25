@@ -35,7 +35,7 @@ jobs:
         # npm run test --if-present
         
         npm uninstall -g @angular/cli
-        npm install -g @angular/cli@14.0.0
+        npm install -g @angular/cli
         npm run build -- --prod
         
     - name: 'Deploy to Azure WebApp'
