@@ -54,7 +54,7 @@ jobs:
         npm install typescript
         npm install @angular/compiler
         
-        npm run build -- --prod
+        npm run build
         
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
