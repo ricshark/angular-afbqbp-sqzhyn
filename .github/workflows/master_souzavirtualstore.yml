@@ -34,8 +34,9 @@ jobs:
         # npm run build -- --prod
         # npm run test --if-present
         
-        npm uninstall -g @angular/cli        
-        npm install -g @angular/cli
+        npm uninstall @angular/cli        
+        npm install @angular/cli
+        npm install @angular/compiler
         npm install @angular-devkit/build-angular
         npm install @angular/compiler-cli
         npm install @types/jasmine
@@ -51,8 +52,7 @@ jobs:
         npm install protractor
         npm install ts-node
         npm install tslint
-        npm install typescript
-        npm install @angular/compiler
+        npm install typescript        
         
         npm run build
         
