@@ -37,6 +37,21 @@ jobs:
         npm uninstall -g @angular/cli        
         npm install -g @angular/cli
         npm install @angular-devkit/build-angular
+        npm install @angular/compiler-cli
+        npm install @types/jasmine
+        npm install @types/node
+        npm install codelyzer
+        npm install jasmine-core
+        npm install jasmine-spec-reporter
+        npm install karma
+        npm install karma-chrome-launcher
+        npm install karma-coverage
+        npm install karma-jasmine
+        npm install karma-jasmine-html-reporter
+        npm install protractor
+        npm install ts-node
+        npm install tslint
+        npm install typescript
         
         npm run build -- --prod
         
