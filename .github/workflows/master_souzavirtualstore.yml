@@ -52,7 +52,8 @@ jobs:
         # npm install protractor
         # npm install ts-node
         # npm install tslint
-        npm install typescript        
+        # npm install typescript        
+
         
         npm run build
         
