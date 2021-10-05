@@ -52,10 +52,8 @@ jobs:
         # npm install protractor
         # npm install ts-node
         # npm install tslint
-        # npm install typescript        
-
-        
-        npm run build
+        # npm install typescript     
+        # npm run build
         
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
