@@ -31,30 +31,8 @@ jobs:
         # Build and test the project, then
         # deploy to Azure Web App.
         npm install
-        npm run build -- --prod
-        # npm run test --if-present
-        
-        # npm uninstall @angular/cli        
-        # npm install @angular/cli
-        # npm install @angular/compiler
-        # npm install @angular-devkit/build-angular
-        # npm install @angular/compiler-cli
-        # npm install @types/jasmine
-        # npm install @types/node
-        # npm install codelyzer
-        # npm install jasmine-core
-        # npm install jasmine-spec-reporter
-        # npm install karma
-        # npm install karma-chrome-launcher
-        # npm install karma-coverage
-        # npm install karma-jasmine
-        # npm install karma-jasmine-html-reporter
-        # npm install protractor
-        # npm install ts-node
-        # npm install tslint
-        # npm install typescript     
-        # npm run build
-        
+        npm run build   
+      
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
       with: 
