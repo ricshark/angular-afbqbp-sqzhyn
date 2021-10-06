@@ -19,7 +19,7 @@ jobs:
   build-and-deploy:
     name: Build and Deploy
     runs-on: ubuntu-latest
-    environment: dev
+    environment: production
     steps:
     - uses: actions/checkout@master
     - name: Use Node.js ${{ env.NODE_VERSION }}
@@ -31,7 +31,7 @@ jobs:
         # Build and test the project, then
         # deploy to Azure Web App.
         npm install
-        npm run build working-directory: .
+        npm run build
       
     - name: 'Deploy to Azure WebApp'
       uses: azure/webapps-deploy@v2
